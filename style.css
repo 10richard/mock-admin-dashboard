@@ -74,7 +74,8 @@ label>button:hover {
 #header {
     grid-column: 2 / 3;
     padding-top: 1%;
-    box-shadow: 0 0 10px black;
+    height: 20%;
+    box-shadow: 0 2px 7px -4px black;
 }
 
 #header>div, #header>:first-child>div, #header>div:nth-child(2)>div:first-child {
@@ -96,7 +97,7 @@ label>button:hover {
 }
 
 #header>div:nth-child(2) {
-    margin-top: 30px;
+    margin-top: 16px;
 }
 
 #header>div:nth-child(2) div:first-child>div>p{
@@ -125,6 +126,7 @@ label>button:hover {
     opacity: 80%;
 }
 
+/*Find rigt background color for search bar*/
 label[for='search']>input {
     border: none;
     background-color: #B6D0E2;
@@ -141,11 +143,11 @@ label[for='search']>input:focus {
 }
 
 .profile-pic1 {
-    width: 3rem;
+    width: 2.8rem;
     border-radius: 50%;
 }
 
 .profile-pic2 {
-    width: 5.5rem;
+    width: 5rem;
     border-radius: 50%;
 }
