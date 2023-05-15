@@ -9,7 +9,7 @@
 </head>
 <body>
     <!--User can go home and see their profile, messages, history, tasks, communities they're in)-->
-    <div class="dashboard">
+    <div id="dashboard">
         <div class="dashboard-text">
             <img src="./assets/view-dashboard.svg" alt="Dashboard logo">
             <h1>Dashboard</h1>
@@ -65,33 +65,39 @@
         </div>
     </div>
 
-    <!--
-    <div class="topbar">
-        <label for="search">
-            <img src="./assets/magnify.svg" alt="Search">
-            <input type="text" id="search">
-        </label>
+    <div id="header">
+        <div>
+            <label for="search">
+                <img src="./assets/magnify.svg" alt="Search">
+                <input type="text" id="search">
+            </label>
+            
+            <div>
+                <button type="button" class="notis"><img src="./assets/bell-ring-outline.svg" alt="Notifications"></button>
+                <img src="./assets/profile-pic.jpeg" alt="Profile picture" class="profile-pic1">
+                <p class="profile-name">Jonathon Doe</p>
+            </div>
+        </div>
 
-        <button type="button"><img src="./assets/bell-ring-outline.svg" alt="Notifications"></button>
-        <button type="button"><img src="" alt="Profile picture"></button>
-        <p class="profile-name"></p>
+        <div>
+            <div>
+                <img src="./assets/profile-pic.jpeg" alt="Profile picture" class="profile-pic2">
+                <div>
+                    <p>Hi there,</p>
+                    <h3 class="profile-name">Jonathon Doe (@doe)</h3>
+                </div>
+            </div>
+            <div class="share-buttons">
+                <button class="create-new">New</button>
+                <button class="upload">Upload</button>
+                <button class="share">Share</button>
+            </div>
+        </div>
     </div>
-
-    <div class="greeting">
-        <img src="" alt="Profile picture">
-        <p>Hi there,</p>
-        <p class="profile-name">Jonathon Doe (@doe)</p>
-    </div>
-
-    <div class="share-projects">
-        <button class="create-new">New</button>
-        <button class="upload">Upload</button>
-        <button class="share">Share</button>
-    </div> -->
 
     <!--Container will hold "main info" (projects, announcements and trending)-->
     <!--
-    <div class="main">
+    <div id="main-content">
 
         <div class="projects">
             <div></div>
