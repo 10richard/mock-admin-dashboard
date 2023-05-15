@@ -1,45 +1,58 @@
 :root {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
     font-family: sans-serif;
+}
+
+button {
+    border: none;
+    background: none;
 }
 
 body {
     margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
 }
 
 img {
     width: 1.5rem;
 }
 
-.dashboard {
+#dashboard {
     background-color: #0CAFFF;
     color: white;
     padding-left: 5%;
-    grid-column: 2;
+    grid-column: 1;
+    grid-row: 1 / 2;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 8%;
+    gap: 7%;
 }
 
 .dashboard-text {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-self: self-start;
     align-items: center;
-    width: 82%;
+    width: 80%;
+}
+
+.dashboard-text h1 {
+    font-size: 1.8rem;
 }
 
 .dashboard-text img {
-    width: 4rem;
+    width: 3.8rem;
     filter: invert(1);
 }
 
-.dashboard div:nth-child(2), .dashboard div:nth-child(3) {
+#dashboard div:nth-child(2), #dashboard div:nth-child(3) {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+#dashboard>div>label>img {
+    filter: invert(1);
 }
 
 label {
@@ -50,8 +63,6 @@ label {
 }
 
 label>button {
-    border: none;
-    background: none;
     color: white;
     font-size: 1.2rem;
 }
@@ -60,6 +71,81 @@ label>button:hover {
     opacity: 70%;
 }
 
-label>img {
-    filter: invert(1);
+#header {
+    grid-column: 2 / 3;
+    padding-top: 1%;
+    box-shadow: 0 0 10px black;
+}
+
+#header>div, #header>:first-child>div, #header>div:nth-child(2)>div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+#header>div {
+    justify-content: space-around;
+}
+
+#header>div:nth-child(2)>div:first-child {
+    width: 26%;
+    justify-content: space-between;
+}
+
+#header>:first-child>div {
+    gap: 30px;
+}
+
+#header>div:nth-child(2) {
+    margin-top: 30px;
+}
+
+#header>div:nth-child(2) div:first-child>div>p{
+    margin-bottom: -10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.share-buttons {
+    width: 30%;
+    display: flex;
+    gap: 40px;
+    margin-left: 200px;
+}
+
+.share-buttons>button {
+    background-color: #0CAFFF;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    width: 25%;
+    height: 40px;
+}
+
+.share-buttons>button:hover {
+    opacity: 80%;
+}
+
+label[for='search']>input {
+    border: none;
+    background-color: #B6D0E2;
+    border-radius: 20px;
+    height: 1.4rem;
+    width: 40rem;
+    padding-left: 5px;
+}
+
+label[for='search']>input:focus {
+    outline: none;
+    box-shadow: 0 0 4px darkgray;
+    opacity: 90%;
+}
+
+.profile-pic1 {
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.profile-pic2 {
+    width: 5.5rem;
+    border-radius: 50%;
 }
